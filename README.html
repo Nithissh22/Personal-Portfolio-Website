@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITHISSH | AIML Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2A2A72;
+            --secondary: #0073e6;
+            --accent: #FFD700;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: var(--primary);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 12rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--secondary);
+            padding-left: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .linkedin-cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .linkedin-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #0077b5;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-button:hover {
+            background: #005582;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .hero {
+                padding: 8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">NITHISSH</h1>
+        <p style="font-size: 1.5rem;">BTech AIML Student & Tech Enthusiast</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <p style="line-height: 1.8; text-align: center;">
+                BTech Artificial Intelligence & Machine Learning student at SRM Institute of Science and Technology.<br>
+                Frontend & Web Developer | Aspiring Tech Freelancer<br>
+                Passionate about creating intelligent solutions and cutting-edge web applications
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fab fa-python fa-3x" style="color: var(--secondary);"></i>
+                <h3>Python</h3>
+                <p>AI/ML Development<br>Scripting</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code fa-3x" style="color: var(--secondary);"></i>
+                <h3>Frontend</h3>
+                <p>HTML5 | CSS3 | JavaScript<br>Responsive Design</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cogs fa-3x" style="color: var(--secondary);"></i>
+                <h3>Programming</h3>
+                <p>C | C++ | Java<br>Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2 class="section-title">Certifications</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <div class="linkedin-cta">
+                <h3>View Professional Certifications</h3>
+                <p>All my verified credentials are available on LinkedIn</p>
+                <a href="https://www.linkedin.com/in/nithissh-s-g-09a0aa2a0/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="linkedin-button">
+                    <i class="fab fa-linkedin"></i>
+                    Check Certificates on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <h3>SRM Institute of Science and Technology</h3>
+                <p>2022-2026 (Expected)</p>
+                <p>BTech in Artificial Intelligence & Machine Learning</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Geethaanjali Senior Secondary School</h3>
+                <p>2020-2022</p>
+                <p>Higher Secondary Education - Computer Science</p>
+                <p>Erode, Tamil Nadu</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div style="margin: 2rem 0;">
+            <a href="https://www.linkedin.com/in/nithissh-s-g-09a0aa2a0/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="linkedin-button">
+                <i class="fab fa-linkedin"></i>
+                Connect on LinkedIn
+            </a>
+        </div>
+        <p>© 2024 NITHISSH. All rights reserved</p>
+    </footer>
+</body>
+</html>
